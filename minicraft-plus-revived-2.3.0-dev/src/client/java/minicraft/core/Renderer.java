@@ -8,9 +8,6 @@ import minicraft.entity.mob.AirWizard;
 import minicraft.entity.mob.ObsidianKnight;
 import minicraft.entity.mob.Player;
 import minicraft.gfx.Color;
-import minicraft.gfx.Ellipsis;
-import minicraft.gfx.Ellipsis.DotUpdater.TickUpdater;
-import minicraft.gfx.Ellipsis.SmoothEllipsis;
 import minicraft.gfx.Font;
 import minicraft.gfx.FontStyle;
 import minicraft.gfx.MinicraftImage;
@@ -41,11 +38,8 @@ import javax.imageio.ImageIO;
 
 import java.awt.Canvas;
 import java.awt.Graphics2D;
-import java.awt.geom.AffineTransform;
-import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
-import java.awt.image.DataBufferInt;
 import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
@@ -76,7 +70,7 @@ public class Renderer extends Game {
 
 	public static SignDisplayMenu signDisplayMenu = null;
 
-	private static Ellipsis ellipsis = new SmoothEllipsis(new TickUpdater());
+	// private static Ellipsis ellipsis = new SmoothEllipsis(new TickUpdater()); // Unused field
 
 	private static int potionRenderOffset = 0;
 

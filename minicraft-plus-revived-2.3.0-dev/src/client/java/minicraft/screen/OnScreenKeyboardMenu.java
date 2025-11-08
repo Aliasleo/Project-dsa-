@@ -16,7 +16,6 @@ import org.jetbrains.annotations.Nullable;
 
 import java.awt.Label;
 import java.awt.event.KeyEvent;
-import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.stream.Stream;
 
@@ -89,8 +88,6 @@ public class OnScreenKeyboardMenu extends Menu {
 	private int keyPressed = 0; // Controls whether to render the selected key as pressed.
 
 	private void initKeyboard() {
-		InputHandler input = Game.input;
-
 		spaceBar = new VirtualKey(' ');
 		backspace = new VirtualKey('\b');
 		shiftKey = new StickyVirtualKey(this::setShiftPressed);

@@ -32,7 +32,6 @@ import minicraft.item.Item;
 import minicraft.item.Items;
 import minicraft.item.PotionItem;
 import minicraft.item.PotionType;
-import minicraft.item.StackableItem;
 import minicraft.level.ChunkManager;
 import minicraft.level.Level;
 import minicraft.level.tile.Tiles;
@@ -115,7 +114,7 @@ public class LegacyLoad {
 
 			String curLine;
 			StringBuilder total = new StringBuilder();
-			ArrayList<String> curData;
+			// ArrayList<String> curData; // Unused variable
 			while ((curLine = br.readLine()) != null)
 				total.append(curLine);
 			data.addAll(Arrays.asList(total.toString().split(",")));
@@ -229,7 +228,7 @@ public class LegacyLoad {
 
 			for (int x = 0; x < lvlw - 1; x++) {
 				for (int y = 0; y < lvlh - 1; y++) {
-					int tileArrIdx = y + x * lvlw;
+					// int tileArrIdx = y + x * lvlw; // Unused variable
 					int tileidx = y + x * lvlh; // The tiles are saved with x outer loop, and y inner loop, meaning that the list reads down, then right one, rather than right, then down one.
 					Load.loadTile(worldVer, map, x, y, Tiles.oldids.get(Integer.parseInt(data.get(tileidx + 3))),
 						extradata.get(tileidx));

@@ -628,7 +628,7 @@ public class LevelGen {
 		}
 
 		if (depth > 2) { // The level above dungeon.
-			int r = 1;
+			// int r = 1; // Unused variable
 			int xm = w / 2;
 			int ym = h / 2;
 			int side = 6; // The side of the lock is 5, and pluses margin with 1.

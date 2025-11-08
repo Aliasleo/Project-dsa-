@@ -266,14 +266,13 @@ public class InputHandler implements KeyListener {
 		// sticky = true if presses reaches 3, and the key continues to be held down.
 		private boolean sticky;
 
-		protected boolean stayDown;
-
 		public PhysicalKey() {
 			this(false);
 		}
 
+		@SuppressWarnings("unused")
 		public PhysicalKey(boolean stayDown) {
-			this.stayDown = stayDown;
+			// stayDown parameter reserved for future use
 		}
 
 		@Override

@@ -729,7 +729,6 @@ public class ResourcePackDisplay extends Display {
 	/**
 	 * Reloading all the resources with the currently packs to be loaded.
 	 */
-	@SuppressWarnings("unchecked")
 	public static void reloadResources() {
 		ArrayList<ResourcePack> loadQuery = new ArrayList<>();
 		loadQuery.addAll(resourcePacks);

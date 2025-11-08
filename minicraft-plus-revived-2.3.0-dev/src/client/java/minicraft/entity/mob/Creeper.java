@@ -11,7 +11,6 @@ import minicraft.gfx.Point;
 import minicraft.gfx.Screen;
 import minicraft.gfx.SpriteLinker.LinkedSprite;
 import minicraft.item.Items;
-import minicraft.level.tile.Tiles;
 
 import java.util.ArrayList;
 import java.util.List;

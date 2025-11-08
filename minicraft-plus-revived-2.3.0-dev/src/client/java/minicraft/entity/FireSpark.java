@@ -102,8 +102,8 @@ public class FireSpark extends Entity {
 			randmirror = random.nextInt(4);
 		}
 
-		int xt = 8;
-		int yt = 13;
+		// int xt = 8; // Unused variable
+		// int yt = 13; // Unused variable
 
 		screen.render(x - 4, y - 4 + 2, sprite.getSprite(), randmirror, false, Color.BLACK); // renders the shadow on the ground
 		screen.render(x - 4, y - 4 - 2, sprite.getSprite(), randmirror, false, Color.RED); // Renders the spark

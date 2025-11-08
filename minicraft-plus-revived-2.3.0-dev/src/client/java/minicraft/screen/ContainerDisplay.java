@@ -4,12 +4,10 @@ import com.studiohartman.jamepad.ControllerButton;
 import minicraft.core.Game;
 import minicraft.core.Renderer;
 import minicraft.core.io.InputHandler;
-import minicraft.core.io.Localization;
 import minicraft.entity.ItemHolder;
 import minicraft.entity.furniture.Chest;
 import minicraft.entity.mob.Player;
 import minicraft.gfx.Color;
-import minicraft.gfx.Font;
 import minicraft.gfx.MinicraftImage;
 import minicraft.gfx.Rectangle;
 import minicraft.gfx.Screen;
@@ -264,7 +262,6 @@ public class ContainerDisplay extends Display {
 		boolean mainMethod = false;
 
 		Menu curMenu = menus[selection];
-		int otherIdx = getOtherIdx();
 		if (onScreenKeyboardMenu == null || !curMenu.isSearcherBarActive() && !onScreenKeyboardMenu.isVisible()) {
 			super.tick(input);
 
@@ -314,7 +311,7 @@ public class ContainerDisplay extends Display {
 					to = player.getInventory();
 				}
 
-				int toSel = menus[otherIdx].getSelection();
+				// int toSel = menus[otherIdx].getSelection(); // Unused variable
 				int fromSel = curMenu.getSelection();
 
 				Item fromItem = from.get(fromSel);

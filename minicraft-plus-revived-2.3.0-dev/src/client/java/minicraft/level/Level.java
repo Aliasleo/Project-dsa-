@@ -38,7 +38,6 @@ import minicraft.util.Logging;
 import minicraft.util.MyUtils;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -146,7 +145,7 @@ public class Level {
 		this.h = h;
 		this.seed = seed;
 		random = new Random(seed);
-		short[][] maps; // Multidimensional array (an array within a array), used for the map
+		// short[][] maps; // Multidimensional array (an array within a array), used for the map // Unused variable
 
 		treeTypes = new TreeTile.TreeType[w * h];
 		{

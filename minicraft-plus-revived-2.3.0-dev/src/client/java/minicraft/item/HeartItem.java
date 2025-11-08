@@ -21,7 +21,7 @@ public class HeartItem extends StackableItem {
 	}
 
 	private int health; // The amount of health to increase by.
-	private int staminaCost; // The amount of stamina it costs to consume.
+	// private int staminaCost; // The amount of stamina it costs to consume. // Unused field
 
 	private HeartItem(String name, SpriteLinker.LinkedSprite sprite, int health) {
 		this(name, sprite, 1, health);
@@ -30,7 +30,7 @@ public class HeartItem extends StackableItem {
 	private HeartItem(String name, SpriteLinker.LinkedSprite sprite, int count, int health) {
 		super(name, sprite, count);
 		this.health = health;
-		staminaCost = 7;
+		// staminaCost = 7; // Unused assignment
 	}
 
 	/**

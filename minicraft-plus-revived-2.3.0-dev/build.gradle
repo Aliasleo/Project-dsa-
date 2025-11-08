@@ -10,6 +10,9 @@ allprojects {
     version = "2.3.0-dev2"
 
     sourceCompatibility = 8
+    targetCompatibility = 8
+    // Note: Gradle 7.3 doesn't support Java 23, so we'll use the default Java version
+    // Remove toolchain requirement to use system Java
     [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
     repositories {

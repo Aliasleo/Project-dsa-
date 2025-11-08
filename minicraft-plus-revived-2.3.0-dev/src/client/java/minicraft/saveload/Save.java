@@ -27,7 +27,6 @@ import minicraft.entity.mob.Player;
 import minicraft.entity.mob.Sheep;
 import minicraft.entity.particle.Particle;
 import minicraft.entity.particle.TextParticle;
-import minicraft.gfx.Point;
 import minicraft.item.Inventory;
 import minicraft.item.Item;
 import minicraft.item.PotionType;
@@ -54,7 +53,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class Save {
 

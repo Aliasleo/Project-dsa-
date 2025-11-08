@@ -11,13 +11,14 @@ public class RangeEntry extends ArrayEntry<Integer> {
 		return ints;
 	}
 
-	private int min, max;
+	private int min;
+	// private int max; // Unused field
 
 	public RangeEntry(String label, int min, int max, int initial) {
 		super(label, false, getIntegerArray(min, max));
 
 		this.min = min;
-		this.max = max;
+		// this.max = max; // Unused assignment
 
 		setValue(initial);
 	}

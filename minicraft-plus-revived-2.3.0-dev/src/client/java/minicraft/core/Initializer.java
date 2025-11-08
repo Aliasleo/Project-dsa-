@@ -42,7 +42,7 @@ public class Initializer extends Game {
 		// Parses command line arguments
 		@Nullable
 		String saveDir = null;
-		boolean enableHardwareAcceleration = true;
+		// boolean enableHardwareAcceleration = true; // Unused variable
 		for (int i = 0; i < args.length; i++) {
 			if (args[i].equalsIgnoreCase("--savedir") && i + 1 < args.length) {
 				i++;

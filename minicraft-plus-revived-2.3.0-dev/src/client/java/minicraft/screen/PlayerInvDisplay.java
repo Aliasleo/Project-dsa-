@@ -121,8 +121,6 @@ public class PlayerInvDisplay extends Display {
 
 		if (mainMethod || !onScreenKeyboardMenu.isVisible()) {
 			if (creativeMode) {
-				int otherIdx = getOtherIdx();
-
 				if (curMenu.getNumOptions() == 0) return;
 
 				Inventory from, to;
@@ -157,7 +155,7 @@ public class PlayerInvDisplay extends Display {
 					from = creativeInv;
 					to = player.getInventory();
 
-					int toSel = menus[otherIdx].getSelection();
+					// int toSel = menus[otherIdx].getSelection(); // Unused variable
 					int fromSel = curMenu.getSelection();
 
 					Item fromItem = from.get(fromSel);

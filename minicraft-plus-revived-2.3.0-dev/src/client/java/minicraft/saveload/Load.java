@@ -710,7 +710,7 @@ public class Load {
 		}
 
 		/* Start of the parsing */
-		Version prefVer = new Version(json.getString("version"));
+		Version prefVer = new Version(json.getString("version")); // Unused variable - kept for potential future use
 
 		// Settings
 		Settings.set("sound", json.getBoolean("sound"));
@@ -801,7 +801,7 @@ public class Load {
 
 			for (int x = 0; x < lvlw; x++) {
 				for (int y = 0; y < lvlh; y++) {
-					int tileArrIdx = y + x * lvlw;
+					// int tileArrIdx = y + x * lvlw; // Unused variable
 					int tileidx = y + x * lvlh; // the tiles are saved with x outer loop, and y inner loop, meaning that the list reads down, then right one, rather than right, then down one.
 					String tilename = data.get(tileidx + (hasSeed ? 4 : 3));
 					if (worldVer.compareTo(new Version("1.9.4-dev6")) < 0) {

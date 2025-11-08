@@ -4,7 +4,6 @@ import minicraft.core.Game;
 import minicraft.core.Updater;
 import minicraft.core.io.Localization;
 import minicraft.entity.mob.Player;
-import minicraft.gfx.SpriteAnimation;
 import minicraft.gfx.SpriteLinker.LinkedSprite;
 import minicraft.gfx.SpriteLinker.SpriteType;
 import minicraft.item.DyeItem;
